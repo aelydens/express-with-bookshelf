@@ -4,6 +4,6 @@ var pg = require("knex")({
 })
 
 
-var bookshelf = require("bookshelf") (pg)
+var bookshelf = require("bookshelf")(pg);
 
 module.exports = bookshelf;

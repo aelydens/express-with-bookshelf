@@ -11,10 +11,10 @@ block content
       th Yardage
       th Domestic?
     tbody
-      tr
-        td
-        td
-        td
-        td
-        td
-        td
+      each fabric in fabrics
+        tr
+          td= fabric.name
+          td= fabric.content
+          td= fabric.width
+          td= fabric.yardage
+          td #{fabric.domestic}
